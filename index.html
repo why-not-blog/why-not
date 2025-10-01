@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="outer">
+		<div class="title">
+			<div class="site-title">why not</div>
+			<div class="site-subtitle">a fashion guide to lose the fear</div>
+<style>
+@font-face {
+src: url(https://dl.dropbox.com/s/kp4x66rhekt1fz5/AdabelleHandwriting-Regular.ttf);
+font-family: adabelle;
+}
+ 
+div {
+font-family: adabelle;
+font-size: 20px;
+}
+ 
+</style>
+ 		
+</div>
+		<div class="banner-wrapper">
+			<div class="banner"></div>
+			<div class="scroller">
+				<div class="marquee">
+					<span>
+					2025/09/20: updated home page &middot; why not    why not    why not    why not &middot;</div>
+				</span>
+			</div>
+		</div>
+		<div class="left">
+			<div class="menu">
+				<a href="home.html" target="content">home</a>
+				<a href="post1.html" target="content">1st post</a>
+				<a href="post2.html" target="content">2nd post</a>
+				<a href="post3.html" target="content">3rd post</a>
+			</div>
+			<div class="friends">
+				<h2>SOCIAL MEDIA</h2>
+				<div><a href="https://www.instagram.com/_youtifulpau_/">instagram</a></div>
+				<div><a href="https://x.com/wallsxkmmlt">twitter</a></div>
+				<div><a href="https://co.pinterest.com/XxTheMoonSoundxX/">pinterest</a></div>
+				<div><a href="https://www.tiktok.com/">tik tok</a></div>
+			</div>
+		<div class="small">
+<h2>CORREO</h2>
+<p>m-gonzalez@utadeo.edu.co</p>
+</div>
+</div>
+		<div class="main">
+			<iframe name="content" src="home.html" class="content"></iframe>
+		</div>
+		<div class="right">
+			<div class="profile">
+				<div class="avatar"></div>
+	
+			<p style="text-align: center;">Paula Gonzalez</p>
+				<p style="text-align: center;">Soy una estudiante de diseño de modas, voy en cuarto semestre y me gusta mucho escribir por eso quiero que la gente conozca más de mis ideas y como estas se relacionan con la moda, la música, la sociedad y todo aquello que me interese.</p>			
+</div>
+		
+		</div>
+	</div>
+	<script type="text/javascript">
+		function Marquee(selector, speed) {
+			const parentSelector = document.querySelector(selector);
+			const clone = parentSelector.innerHTML;
+			const firstElement = parentSelector.children[0];
+			let i = 0;
+			console.log(firstElement);
+			parentSelector.insertAdjacentHTML('beforeend', clone);
+			parentSelector.insertAdjacentHTML('beforeend', clone);
+
+			setInterval(function () {
+				firstElement.style.marginLeft = `-${i}px`;
+				if (i > firstElement.clientWidth) {
+					i = 0;
+				}
+				i = i + speed;
+			}, 0);
+		}
+
+	//after window is completed load
+	//1 class selector for marquee
+	//2 marquee speed 0.2
+	window.addEventListener('load', Marquee('.marquee', 0.4))
+
+</script>
+</body>
+</html>
